@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">AtmelAppWeek</string>
+    <string name="app_desc">Thinking is hard. Drinking is easy!</string>
+    <string name="week_indicator">It\'s week %s, which means </string>
+
+    <string-array name="foodstuffs">
+        <item>Beer!</item>
+        <item>Waffles!</item>
+    </string-array>
+
+    <string name="foodstuff_desc">Atmel Apps food this week.</string>
+
+</resources>
