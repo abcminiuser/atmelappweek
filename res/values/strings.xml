@@ -10,5 +10,8 @@
     </string-array>
 
     <string name="foodstuff_desc">Atmel Apps food this week.</string>
+    <dimen name="widget_padding_outer">10dp</dimen>
+    <dimen name="widget_padding_inner">10dp</dimen>
+    <dimen name="foodimage_padding_right">5dp</dimen>
 
 </resources>

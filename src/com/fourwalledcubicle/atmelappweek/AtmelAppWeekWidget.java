@@ -39,7 +39,7 @@ public class AtmelAppWeekWidget extends AppWidgetProvider {
 			int weekOfYear = now.get(Calendar.WEEK_OF_YEAR);
 			WeekTypes weekType = WeekTypes.getWeekType(weekOfYear);
 						
-			remoteViews.setTextViewText(R.id.update,
+			remoteViews.setTextViewText(R.id.foodtext,
 					res.getString(R.string.week_indicator, weekOfYear) + " " +
 					res.getStringArray(R.array.foodstuffs)[(weekType == WeekTypes.WEEK_BEER) ? 0 : 1]);
 			remoteViews.setImageViewResource(R.id.foodimage,

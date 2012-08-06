@@ -2,16 +2,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp" >
+    android:padding="@dimen/widget_padding_outer" >
 
     <LinearLayout
-        android:id="@+id/layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="left"
         android:background="@drawable/appwidget_dark_bg"
         android:orientation="horizontal"
-        android:padding="10dp" >
+        android:padding="@dimen/widget_padding_inner" >
 
         <ImageView
             android:id="@+id/foodimage"
@@ -19,12 +18,11 @@
             android:layout_height="fill_parent"
             android:layout_weight=".25"
             android:contentDescription="@string/foodstuff_desc"
-            android:paddingRight="5dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/beer" />
+            android:paddingRight="@dimen/foodimage_padding_right"
+            android:scaleType="centerInside"/>
 
         <TextView
-            android:id="@+id/update"
+            android:id="@+id/foodtext"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight=".75"
