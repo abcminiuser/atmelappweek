@@ -36,7 +36,10 @@ public class AtmelAppWeekWidget extends AppWidgetProvider {
 		for (int widgetId : allWidgetIds) {
 			RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.widgetlayout);
 			
+			now.setFirstDayOfWeek(Calendar.SATURDAY);
+			
 			int weekOfYear = now.get(Calendar.WEEK_OF_YEAR);
+			
 			WeekTypes weekType = WeekTypes.getWeekType(weekOfYear);
 						
 			remoteViews.setTextViewText(R.id.foodtext,
